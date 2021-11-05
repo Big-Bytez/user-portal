@@ -190,11 +190,19 @@
  }
  div.favor-recipes{
    background-color: #ff0000;
-   height:15vw;
-   width: 15vw;
+   height: 18vw;
+   width: 18vw;
    border:3px solid #000000;
    float:left;
    margin:1vw;
+ }
+ 
+ .recipes {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 25vw 25vw 25vw;
+  justify-items: center;
+  background-color: #ffffff; /*white background*/
  }
  
 
