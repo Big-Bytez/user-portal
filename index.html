@@ -7,26 +7,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
   <title>Quick Bytes</title>
 
 
   <!-- Main Stylesheet & Scripts -->
   <link rel="stylesheet" href="style.css" />
+  <script src="./scripts/upload.js" type="module"></script>
   <script src="" type="module"></script>
 </head>
 
 <body>
   <searchbar id= "search-bar">
     <form id="form" role="search">
-    <input type="search" id="query" name="q"
-     placeholder="No limit? Search here"
-     aria-label="Search through site content">
-    <button><svg viewBox="0 0 1024 1024"><path class="path1" src=""></path></svg></button>
-    <button class = "sort">Sort</button>
-  </form>
-</searchbar>
+      <input type="search" id="query" name="q"
+      placeholder="No limit? Search here"
+      aria-label="Search through site content">
+      <button><svg viewBox="0 0 1024 1024"><path class="path1" src=""></path></svg></button>
+      <button class = "sort">Sort</button>
+    </form>
+  </searchbar>
   <header>
 <br><br><br><br>
     <h2>How much time do you have?</h2>
@@ -35,17 +36,18 @@
     <button class= "button button5">5 min</button>
     <button class= "button button20">20 min</button>
     <button class= "button button60">60 min</button>
-  </div>
-</header>
+    </div>
+  </header>
 <div class = logo>
   <a href="#top">
     <img src="images\logo.png" alt="logo" width=60 height =60 title= "QuickBytes"></img>
   </a>
 </div>
 <div class = user-portal>
-  <a href="">
-    <img src="images\user-image.png" alt="user" width=60 height =60 title= "User-Portal"></img>
-</a>
+  <img src="images\user-image.png" id="user" alt="user" width=60 height =60 title= "User-Portal"></img>
+</div>
+<div class = user-portal-upload>
+  <input type="file" id="upload" name="filename" accept="image/*" onchange="document.getElementById('user').src = window.URL.createObjectURL(this.files[0])">
 </div>
 <sideBar class="vert-navigation">
   <nav class = "sideNav">
@@ -67,9 +69,6 @@
       <a href="" title="Sides">Sides</a>
     </nav>
   </sideBar>
-  <main>
-    <section id="browse"><h3>Browse for recipes</h3> </section>
-  </main>
 </body>
 
 </html>

@@ -16,10 +16,6 @@
    background-color: #ffffff; /*white background*/
  }
  
- body, html {
-   height: 150%;
-   width: 100%;
- }
  .searchbox {  
    float: left;
    }  
@@ -184,3 +180,11 @@
    display: none;
  }
  
+ .user-portal-upload {
+  position: fixed;
+  width: 6em;
+  justify-self: right;
+  margin-right: 2.9em;
+  padding-left: .2em;
+  top: 5em;
+ }
