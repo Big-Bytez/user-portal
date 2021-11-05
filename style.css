@@ -188,3 +188,14 @@
   padding-left: .2em;
   top: 5em;
  }
+ div.favor-recipes{
+   background-color: #ff0000;
+   height:15vw;
+   width: 15vw;
+   border:3px solid #000000;
+   float:left;
+   margin:1vw;
+ }
+ 
+
+ 
