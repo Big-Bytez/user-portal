@@ -137,7 +137,7 @@
    height: 4em;
    width: 4em;
    justify-self: right;
-   margin-right: 3em;
+   margin-right: 8em;
    padding-left: .2em;
    top: 1em;
    background-color:none;
@@ -182,11 +182,12 @@
  
  .user-portal-upload {
   position: fixed;
-  width: 6em;
+  width: 10em;
   justify-self: right;
-  margin-right: 2.9em;
+  margin-right: 3.3em;
   padding-left: .2em;
-  top: 5em;
+  top: 5.7em;
+  background-color: transparent;
  }
  div.favor-recipes{
    background-color: #ff0000;
