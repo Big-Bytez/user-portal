@@ -137,7 +137,7 @@
    height: 4em;
    width: 4em;
    justify-self: right;
-   margin-right: 8em;
+   margin-right: 5em;
    padding-left: .2em;
    top: 1em;
    background-color:none;
@@ -184,7 +184,7 @@
   position: fixed;
   width: 10em;
   justify-self: right;
-  margin-right: 3.3em;
+  margin-right: .4em;
   padding-left: .2em;
   top: 5.7em;
   background-color: transparent;
@@ -202,7 +202,15 @@
   align-items: center;
   display: grid;
   grid-template-columns: 25vw 25vw 25vw;
+  grid-template-rows: auto;
   justify-items: center;
   background-color: #ffffff; /*white background*/
  }
  
+ .recipe-box {
+   border: 3px solid black;
+ }
+
+ .recipe-box > h3 {
+   padding-left: 3.5em;
+ }
